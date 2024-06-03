@@ -86,3 +86,15 @@
   .navtoggler span::after {
     transform: translateY(6px);
   }
+
+  .navenabled span {
+    background-color: transparent;
+  }
+
+  .navenabled span::before {
+    transform: rotate(45deg);
+  }
+  
+  .navenabled span::after {
+    transform: rotate(135deg);
+  }

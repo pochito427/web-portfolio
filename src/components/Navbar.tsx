@@ -8,6 +8,10 @@ const Navbar = () => {
 
     const [navEnabled, setNavEnabled] = useState(false);
 
+    const handleNavBarClick = () => {
+        setNavEnabled(!navEnabled)
+    }
+
     const handleButtonClick = (section: any) => {
         console.log(section);
     }
@@ -20,7 +24,7 @@ const Navbar = () => {
                     quality={100} className={styles.sign} />
             </div>
 
-            <div className={styles.navtoggler}>
+            <div className={navEnabled ? `${styles.navtoggler} ${styles.navenabled}` : `${styles.navtoggler}`} onClick={handleNavBarClick}>
                 <span></span>
             </div>
 

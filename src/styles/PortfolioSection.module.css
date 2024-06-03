@@ -117,3 +117,119 @@
     color: #fff;
     font-weight: 200;
 }
+
+@media (max-width: 1000px){
+    .maintextdiv h1{
+        font-size: 5rem;
+        word-spacing: 3rem;
+    }
+
+    .maintextdiv p{
+        font-size: 2rem;
+    }
+
+    .maintextdiv h2{
+        font-size: 3rem;
+    }
+
+    .subtextdiv{
+        padding: 10px;
+    }
+
+    .subtextdiv .left .about{
+        width: 300px;
+    }
+
+    .subtextdiv .right .stat h1{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 750px){
+    .mainimg{
+        height: 70%;
+    }
+    .maintextdiv{
+        top: 20%;
+    }
+    .maintextdiv h1{
+        font-size: 4rem;
+        word-spacing: 1rem;
+    }
+  
+
+    .maintextdiv p{
+        font-size: 1.5rem;
+    }
+
+    .maintextdiv h2{
+        top: -30px;
+
+        font-size: 2rem;
+    }
+
+    .subtextdiv .left .about p:nth-child(2){
+        font-size: 1rem;
+  }
+  .subtextdiv .left .about p:nth-child(2) span{
+        font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 580px){
+    .mainimg{
+        height: 60%;
+    }
+    .maintextdiv h2{
+       top: -20px;
+         right: -20px;
+       align-self: center;
+        font-size: 2rem;
+        transform: rotate(-10deg);
+    }
+    .subtextdiv {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        background-color: rgba(0, 0, 0, 0.296);
+
+    }
+    .subtextdiv .left .about{
+        text-align: center;
+    }
+    .subtextdiv .right{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 450px){
+    .maintextdiv h1{
+        font-size: 3rem;
+        word-spacing: 0.5rem;
+    }
+
+    .maintextdiv p{
+        font-size: 2rem;
+    }
+
+    .maintextdiv h2{
+        top: -10px;
+        right: -10px;
+        font-size: 1.5rem;
+    }
+    .subtextdiv .left .about p:nth-child(2){
+        font-size: 1rem;
+    }
+
+    .subtextdiv .right .stat h1{
+        font-size: 2rem;
+    }
+    .subtextdiv .right .stat p{
+        font-size: 1rem;
+    }
+}

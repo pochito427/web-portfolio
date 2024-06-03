@@ -2,6 +2,7 @@
     height: 50px;
     width: auto;
     object-fit: cover;
+    background-color: white;
   }
   
   .navouter { 

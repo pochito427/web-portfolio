@@ -20,8 +20,8 @@ const Navbar = () => {
         <div className={styles.navouter}>
 
             <div className={styles.left}>
-                <Image alt="" src={signature} width={500} height={500}
-                    quality={100} className={styles.sign} />
+                <Image alt="Alfonso Jimenez" src={signature} width={500} height={500}
+                    quality={100} priority={true} className={styles.sign} />
             </div>
 
             <div className={navEnabled ? `${styles.navtoggler} ${styles.navenabled}` : `${styles.navtoggler}`} onClick={handleNavBarClick}>

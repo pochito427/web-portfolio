@@ -1,0 +1,40 @@
+.sign {
+    height: 50px;
+    width: auto;
+    object-fit: cover;
+  }
+  
+  .navouter { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  .right,
+  .right1 {
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+  }
+  
+  .right button,
+  .right1 button {
+    background-color: transparent;
+    color: rgb(153, 153, 153);
+    font-weight: 400;
+    font-size: 18px;
+    border: none;
+    padding: 3px 0px;
+    /* textborder */
+    -webkit-text-stroke: 0.5px rgb(212, 212, 212);
+  }
+  
+  .right button:hover {
+    color: white;
+    cursor: pointer;
+  }

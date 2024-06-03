@@ -20,6 +20,10 @@ const Navbar = () => {
                     quality={100} className={styles.sign} />
             </div>
 
+            <div className={styles.navtoggler}>
+                <span></span>
+            </div>
+
             <div className={styles.right}>
                 <button onClick={() => handleButtonClick('home')}>Home</button>
                 <button onClick={() => handleButtonClick('about')}>About</button>

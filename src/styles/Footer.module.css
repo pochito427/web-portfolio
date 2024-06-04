@@ -1,0 +1,33 @@
+.section4outermost {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px;
+}
+.left {
+    width: 500px;
+    padding: 30px;
+}
+
+.left p {
+    font-size: 25px;
+    color: grey;
+}
+
+.left span {
+    color: black;
+}
+
+.left span a {
+    font-weight: bold;
+}
+
+.left span a:hover {
+    color: blue;
+}
+
+.right h1 {
+    font-size: 100px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 100px;
+}

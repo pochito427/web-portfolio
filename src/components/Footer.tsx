@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <div className={styles.section4outermost}>
             <div className={styles.left}>
-                <p>If you are Looking for a web/front-end developer or need
+                <p>If you are looking for a web/front-end developer or need
                 help with your project then feel free to contact me at
                 <span><a href="mailto: djalfo18@gmail.com">djalfo18@gmail.com</a></span>
                 </p>

@@ -31,3 +31,33 @@
     font-family: 'Poppins', sans-serif;
     line-height: 100px;
 }
+
+@media (max-width:1000px) {
+    .section4outermost {
+        padding: 100px 20px;
+    }
+}
+
+@media (max-width:750px) {
+    .section4outermost {
+        flex-direction: column-reverse;
+    }
+
+    .left {
+        width: 95%;
+        padding: 20px 0px;
+    }
+
+    .left p {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:450px) {
+    .right h1 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+}

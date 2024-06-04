@@ -4,7 +4,19 @@ import styles from '@/styles/Navbar.module.css';
 import Image from 'next/image';
 import signature from '@/assets/signature.png';
 
-const Navbar = () => {
+const Navbar = ({
+    homeRef,
+    aboutRef,
+    projectsRef,
+    contactRef,
+    skillsRef
+}: {
+    homeRef: React.RefObject<HTMLDivElement>
+    aboutRef: React.RefObject<HTMLDivElement>
+    projectsRef: React.RefObject<HTMLDivElement>
+    contactRef: React.RefObject<HTMLDivElement>
+    skillsRef: React.RefObject<HTMLDivElement>
+}) => {
 
     const [navEnabled, setNavEnabled] = useState(false);
 
@@ -14,6 +26,23 @@ const Navbar = () => {
 
     const handleButtonClick = (section: any) => {
         console.log(section);
+        if (section === 'home' && homeRef.current) {
+            homeRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+        else if (section === 'about' && aboutRef.current) {
+            aboutRef.current.scrollIntoView({ behavior: 'smooth' });
+        } else if (section === 'projects' && projectsRef.current) {
+            projectsRef.current.scrollIntoView({ behavior: 'smooth' });
+        } 
+        else if (section === 'skills' && skillsRef.current) {
+            skillsRef.current.scrollIntoView({ behavior: 'smooth' });
+        }
+        else if (section === 'contact' && contactRef.current) {
+            contactRef.current.scrollIntoView({ behavior: 'smooth' });
+        } else {
+            // Provide clear error message for missing section
+            console.warn(`Section "${section}" not found. Please ensure it exists.`);
+        }
     }
 
     return (

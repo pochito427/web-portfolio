@@ -43,3 +43,43 @@
     object-position: center;
     border-radius: 10px;
 }
+
+@media (max-width: 1000px){
+    .about{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding-top: 20%;
+    }
+
+    .about .textdiv{
+        width: 90%;
+    }
+
+    .about iframe{
+        margin: 20px 0px;
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 500px){
+    .about{
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .about .textdiv h1{
+        font-size: 2rem;
+    }
+
+    .about .textdiv p{
+        font-size: 0.9rem;
+    }
+
+    .about iframe{
+        width: 80%;
+    }
+    
+}

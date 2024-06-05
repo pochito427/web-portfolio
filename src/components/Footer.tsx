@@ -13,7 +13,7 @@ const Footer = () => {
             <div className={styles.right}>
                 <h1>
                 Let&apos;s<br />
-                Work<br />
+                work<br />
                 together
                 </h1>
             </div>

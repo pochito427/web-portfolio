@@ -66,6 +66,12 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
+                    <h1>React Router and Redux challenge</h1>
+                    <a href="https://github.com/pochito427/react-challenge-02" target="_blank">Code</a>
+                </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                <div className={styles.projectcard}>
                     <h1>JavaScript Standard Calculator</h1>
                     <a href="https://pochito427.github.io/calculadora.html" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/pochito427.github.io/blob/master/calculadora.html" target="_blank">Code</a>

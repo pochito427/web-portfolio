@@ -74,7 +74,12 @@ const SkillSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
-                    <h1>SaaS</h1>
+                    <h1>Node.js</h1>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.projectcard}>
+                    <h1>Stylus</h1>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

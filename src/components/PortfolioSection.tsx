@@ -10,7 +10,7 @@ const PortfolioSection = () => {
                 <div className={styles.left}>
                 <div className={styles.about}>
                     <p>Hi, I am <span>Alfonso Jimenez</span></p>
-                    <p>I build full stack web applications. I am open to work currently.</p>
+                    <p>I build full-stack web applications. I am open to work currently.</p>
                 </div>
                 </div>
                 <div className={styles.right}>
@@ -27,7 +27,7 @@ const PortfolioSection = () => {
             <Image src={mainImg} className={styles.mainimg} alt="Alfonso Jimenez" quality={100} />
             <div className={styles.maintextdiv}>
                 <p>I am a </p>
-                <h1><span>&nbsp;</span>FULL STACK</h1>
+                <h1><span>&nbsp;</span>FULL-STACK</h1>
                 <h2>Developer</h2>
             </div>
         </div>

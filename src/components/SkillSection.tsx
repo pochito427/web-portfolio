@@ -1,5 +1,13 @@
 "use client";
 import React from "react";
+import { DiReact } from "react-icons/di";
+import { DiJavascript1 } from "react-icons/di";
+import { DiStylus } from "react-icons/di";
+import { DiHtml5 } from "react-icons/di";
+import { DiCss3 } from "react-icons/di";
+import { DiPython } from "react-icons/di";
+import { DiNodejs } from "react-icons/di";
+import { DiGit } from "react-icons/di";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -40,16 +48,19 @@ const SkillSection = () => {
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>HTML</h1>
+                    <DiHtml5 />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>CSS</h1>
+                    <DiCss3 />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>JavaScript</h1>
+                    <DiJavascript1 />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -60,11 +71,13 @@ const SkillSection = () => {
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>React.js</h1>
+                    <DiReact />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>Python</h1>
+                    <DiPython />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -75,16 +88,19 @@ const SkillSection = () => {
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>Node.js</h1>
+                    <DiNodejs />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>Stylus</h1>
+                    <DiStylus />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>Git</h1>
+                    <DiGit />
                     </div>
                 </SwiperSlide>
                 </Swiper>

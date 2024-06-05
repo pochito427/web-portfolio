@@ -6,6 +6,7 @@ import { DiStylus } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
 import { DiPython } from "react-icons/di";
+import { DiHtml5Multimedia } from "react-icons/di";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -101,7 +102,7 @@ const ProjectSection = () => {
                 <SwiperSlide>
                 <div className={styles.projectcard}>
                     <h1>Loading Multimedia Sources</h1>
-                    <DiHtml5 />
+                    <DiHtml5 /> <DiHtml5Multimedia />
                     <a href="https://pochito427.github.io/00-HTML-CSS-basics/multimedia.html" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/pochito427.github.io/blob/master/00-HTML-CSS-basics/multimedia.html" target="_blank">Code</a>
                 </div>

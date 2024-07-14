@@ -46,7 +46,7 @@ const ProjectSection = () => {
             >
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>Random Fox Generator</h1>
+                    <h1><a href="https://react-with-typescript-tan.vercel.app/" target="_blank">Random Fox Generator</a></h1>
                     <DiReact />
                     <a href="https://react-with-typescript-tan.vercel.app/" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/react-with-typescript" target="_blank">Code</a>
@@ -54,7 +54,7 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>Async Landing</h1>
+                    <h1><a href="https://pochito427.github.io/async-landing/" target="_blank">Async Landing</a></h1>
                     <DiHtml5 /> <DiJavascript1 />
                     <a href="https://pochito427.github.io/async-landing/" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/async-landing" target="_blank">Code</a>
@@ -62,7 +62,7 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>Next.js Blog</h1>
+                    <h1><a href="https://nextjs-blog-seven-dusky-93.vercel.app/" target="_blank">Next.js Blog</a></h1>
                     <DiReact />
                     <a href="https://nextjs-blog-seven-dusky-93.vercel.app/" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/nextjs-blog" target="_blank">Code</a>
@@ -70,7 +70,7 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>React.js Tutorial</h1>
+                    <h1><a href="https://pochito427.github.io/react-tutorial/" target="_blank">React.js Tutorial</a></h1>
                     <DiReact /> 
                     <a href="https://pochito427.github.io/react-tutorial/" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/react-tutorial" target="_blank">Code</a>
@@ -78,14 +78,14 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>React Router and Redux challenge</h1>
+                    <h1><a href="https://github.com/pochito427/react-challenge-02" target="_blank">React Router and Redux challenge</a></h1>
                     <DiReact /> <DiStylus />
                     <a href="https://github.com/pochito427/react-challenge-02" target="_blank">Code</a>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>JavaScript Standard Calculator</h1>
+                    <h1><a href="https://pochito427.github.io/calculadora.html" target="_blank">JavaScript Standard Calculator</a></h1>
                     <DiHtml5 /> <DiJavascript1 />
                     <a href="https://pochito427.github.io/calculadora.html" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/pochito427.github.io/blob/master/calculadora.html" target="_blank">Code</a>
@@ -93,7 +93,7 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>Avengers Infinity War</h1>
+                    <h1><a href="https://pochito427.github.io/00-HTML-CSS-basics/layout_grid_system.html" target="_blank">Avengers Infinity War</a></h1>
                     <DiHtml5 /> <DiCss3 />
                     <a href="https://pochito427.github.io/00-HTML-CSS-basics/layout_grid_system.html" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/pochito427.github.io/blob/master/00-HTML-CSS-basics/layout_grid_system.html" target="_blank">Code</a>
@@ -101,7 +101,7 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>Loading Multimedia Sources</h1>
+                    <h1><a href="https://pochito427.github.io/00-HTML-CSS-basics/multimedia.html" target="_blank">Loading Multimedia Sources</a></h1>
                     <DiHtml5 /> <DiHtml5Multimedia />
                     <a href="https://pochito427.github.io/00-HTML-CSS-basics/multimedia.html" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/pochito427.github.io/blob/master/00-HTML-CSS-basics/multimedia.html" target="_blank">Code</a>
@@ -109,7 +109,7 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>CSS Box Model</h1>
+                    <h1><a href="https://pochito427.github.io/00-HTML-CSS-basics/boxmodel.html" target="_blank">CSS Box Model</a></h1>
                     <DiHtml5 /> <DiCss3 />
                     <a href="https://pochito427.github.io/00-HTML-CSS-basics/boxmodel.html" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/pochito427.github.io/blob/master/00-HTML-CSS-basics/boxmodel.html" target="_blank">Code</a>
@@ -117,7 +117,7 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1>Platzi Datacademy</h1>
+                    <h1><a href="https://github.com/pochito427/proyecto-datacademy-platzi/blob/main/template_proyecto_datacademy.ipynb" target="_blank">Platzi Datacademy</a></h1>
                     <DiPython />
                     <a href="https://github.com/pochito427/proyecto-datacademy-platzi/blob/main/template_proyecto_datacademy.ipynb" target="_blank">Demo</a>
                 </div>

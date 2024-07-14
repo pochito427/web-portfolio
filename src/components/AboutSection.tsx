@@ -16,6 +16,7 @@ const AboutSection = () => {
                     <VideoComponent />
                 </Suspense>
                 {/* Other content of the page */}
+                <a href="/CV.pdf" download="CV" className={styles.downloadcv}>Download CV</a>
             </section>
         </div>
     )

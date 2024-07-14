@@ -1,6 +1,6 @@
 import React from "react";
 import styles from '@/styles/PortfolioSection.module.css'
-import mainImg from '@/assets/alfonso_jimenez.jpg'
+import mainImg from '@/assets/alfonso_jimenez.png'
 import Image from 'next/image'
 
 const PortfolioSection = () => {
@@ -9,18 +9,18 @@ const PortfolioSection = () => {
             <div className={styles.subtextdiv}>
                 <div className={styles.left}>
                 <div className={styles.about}>
-                    <p>Hi, I am <span>Alfonso Jimenez</span></p>
-                    <p>I build full-stack web applications. I am open to work currently.</p>
+                    <p><strong>Hi, I am Alfonso Jimenez</strong></p>
+                    <p><strong>I build full-stack web applications. I am open to work currently.</strong></p>
                 </div>
                 </div>
                 <div className={styles.right}>
                     <div className={styles.stat}>
                         <h1>10+</h1>
-                        <p>Satisfied<br></br>clients</p>
+                        <p><strong>Satisfied<br></br>clients</strong></p>
                     </div>
                     <div className={styles.stat}>
                         <h1>5+</h1>
-                        <p>Years of<br></br>experience</p>
+                        <p><strong>Years of<br></br>experience</strong></p>
                     </div>
                 </div>
             </div>

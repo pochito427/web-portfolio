@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
+    background: linear-gradient(to bottom right, #0099ff 0%, #00ff99 100%);
 }
 
 .maintextdiv {
@@ -50,7 +50,7 @@
 
 .maintextdiv h2{
     align-self: flex-end;
-    font-family: "Cedarville Cursive", cursive;
+    /* font-family: "Cedarville Cursive", cursive; */
     font-weight: 400;
     font-size: 5rem;
     position: relative;
@@ -86,8 +86,7 @@
     font-weight: 200;
 }
 
-.subtextdiv .left .about p span{
-    font-weight: 400;
+.subtextdiv .left .about p strong{
     font-family: 'Anta', sans-serif;
     font-size: 2rem;
 }

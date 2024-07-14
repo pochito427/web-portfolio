@@ -1,11 +1,4 @@
-.sign {
-    height: 50px;
-    width: auto;
-    object-fit: cover;
-    background-color: white;
-  }
-  
-  .navouter { 
+ .navouter { 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +29,7 @@
   }
   
   .right button:hover {
-    color: white;
+    color: rgba(212, 212, 212);
     cursor: pointer;
   }
 

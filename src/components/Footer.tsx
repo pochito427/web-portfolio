@@ -7,7 +7,7 @@ const Footer = () => {
             <div className={styles.left}>
                 <p>If you are looking for a web/front-end developer or need
                 help with your project then feel free to contact me at
-                <span><a href="mailto: djalfo18@gmail.com">djalfo18@gmail.com</a></span>
+                <span>&nbsp;<a href="mailto: djalfo18@gmail.com">djalfo18@gmail.com</a></span>
                 </p>
             </div>
             <div className={styles.right}>

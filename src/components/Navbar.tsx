@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useTranslations } from 'next-intl';
 import styles from '@/styles/Navbar.module.css';
+import LocalSwitcher from "./LocalSwitcher";
 
 
 const Navbar = ({
@@ -71,6 +72,8 @@ const Navbar = ({
                     <button onClick={() => handleButtonClick('contact')}>{t('contact')}</button>
                 </div> 
             }
+
+            <LocalSwitcher />
 
         </div>
     )

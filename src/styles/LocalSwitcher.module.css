@@ -1,0 +1,10 @@
+.labeldiv {
+    border-width: 2px;
+    border-radius: 0.25rem;
+}
+
+.selectdiv {
+    background-color: transparent;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}

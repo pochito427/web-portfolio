@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useTranslations } from 'next-intl';
 import { DiReact } from "react-icons/di";
 import { DiJavascript1 } from "react-icons/di";
 import { DiStylus } from "react-icons/di";
@@ -25,9 +26,10 @@ import './ProjectSwiper.css';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
 const SkillSection = () => {
+    const t = useTranslations('SkillSection');
     return (
         <div className={styles.projectdiv}>
-            <h1>My Skills</h1>
+            <h1>{t('header')}</h1>
             <div className='projectswipercontainer'>
                 <Swiper
                 effect={'coverflow'}

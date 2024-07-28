@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { useTranslations } from 'next-intl';
 import styles from '@/styles/Navbar.module.css';
 
 
@@ -44,6 +45,8 @@ const Navbar = ({
         }
     }
 
+    const t = useTranslations('Navbar');
+
     return (
         <div className={styles.navouter}>
 
@@ -53,19 +56,19 @@ const Navbar = ({
             </div>
 
             <div className={styles.right}>
-                <button onClick={() => handleButtonClick('home')}>Home</button>
-                <button onClick={() => handleButtonClick('about')}>About</button>
-                <button onClick={() => handleButtonClick('projects')}>Projects</button>
-                <button onClick={() => handleButtonClick('skills')}>Skills</button>
-                <button onClick={() => handleButtonClick('contact')}>Contact</button>
+                <button onClick={() => handleButtonClick('home')}>{t('home')}</button>
+                <button onClick={() => handleButtonClick('about')}>{t('about')}</button>
+                <button onClick={() => handleButtonClick('projects')}>{t('projects')}</button>
+                <button onClick={() => handleButtonClick('skills')}>{t('skills')}</button>
+                <button onClick={() => handleButtonClick('contact')}>{t('contact')}</button>
             </div>
 
             { navEnabled && <div className={styles.right1}>
-                    <button onClick={() => handleButtonClick('home')}>Home</button>
-                    <button onClick={() => handleButtonClick('about')}>About</button>
-                    <button onClick={() => handleButtonClick('projects')}>Projects</button>
-                    <button onClick={() => handleButtonClick('skills')}>Skills</button>
-                    <button onClick={() => handleButtonClick('contact')}>Contact</button>
+                    <button onClick={() => handleButtonClick('home')}>{t('home')}</button>
+                    <button onClick={() => handleButtonClick('about')}>{t('about')}</button>
+                    <button onClick={() => handleButtonClick('projects')}>{t('projects')}</button>
+                    <button onClick={() => handleButtonClick('skills')}>{t('skills')}</button>
+                    <button onClick={() => handleButtonClick('contact')}>{t('contact')}</button>
                 </div> 
             }
 

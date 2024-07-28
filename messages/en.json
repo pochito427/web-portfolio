@@ -1,0 +1,62 @@
+{
+    "Navbar":{
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "skills": "Skills",
+        "contact": "Contact"
+    },
+    "PortfolioSection":{
+        "subtextdiv":{
+            "about1": "Hi, I am Alfonso Jimenez",
+            "about2": "I build full-stack web applications. I am open to work currently.",
+            "stat1": "Satisfied",
+            "stat2": "clients",
+            "stat3": "Years of",
+            "stat4": "experience" 
+        },
+        "maintextdiv": {
+            "paragraph": "I am a ",
+            "header1": "FULL-STACK",
+            "header2": "Developer"
+        }
+    },
+    "AboutSection":{
+        "textdiv":{
+            "header": "About me",
+            "paragraph1": "I am a specialized full-stack developer, your go-to solution for crafting full-stack websites, dynamic web and Single Page applications. With a passion for problem-solving and innovation, I excel in creating seamless digital experiences tailored to your business needs.",
+            "paragraph2": "Specializing in development with React.js, TypeScript, Next.js and Node.js, I leverage the power of the front-end and back-end stacks to deliver robust and dynamic solutions that exceed expectations. Whether you need a sleek website or a responsive web app, I have the skills to bring your vision to life.",
+            "paragraph3": "My commitment to clean, maintainable and accessible code ensures better usability and scalability, while my understanding of business challenges enables me to develop custom solutions that address your specific needs."
+        },
+        "VideoComponent":{
+            "loader": "Loading video..."
+        },
+        "downloadCV": "Download CV"
+    },
+    "ProjectSection":{
+        "projectdiv":{
+            "header": "My Projects"
+        },
+        "projectcard":{
+            "code": "Code"
+        }
+    },
+    "SkillSection":{  
+        "header": "My Skills"
+    },
+    "Footer":{
+        "left":{
+            "paragraph": "If you are looking for a web/front-end developer or need help with your project then feel free to contact me at"
+        },
+        "right":{
+            "header1": "Let's",
+            "header2": "work",
+            "header3": "together"
+        }
+    },
+    "SocialSection":{
+        "socialcard":{
+            "linkedin": "Alfonso Jimenez"
+        }
+    }
+}

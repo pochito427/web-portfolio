@@ -1,9 +1,11 @@
 "use client";
 import React from "react";
+import { useTranslations } from 'next-intl';
 import styles from '@/styles/SocialSection.module.css';
 import { SocialIcon } from 'react-social-icons'
 
 const SocialSection = () => {
+    const t = useTranslations('SocialSection');
     return (
         <div className={styles.social}>
             <div className={styles.socialcard}
@@ -24,7 +26,7 @@ const SocialSection = () => {
                 onClick={() => window.open('https://www.linkedin.com/in/alfonso-neil-jimenez-casallas-3208a120/', '_blank')}
             >
                 <SocialIcon url="https://linkedin.com" style={{ height: 40, width: 40 }} />
-                <p>Alfonso Jimenez</p>
+                <p>{t('socialcard.linkedin')}</p>
             </div>
         </div>
     )

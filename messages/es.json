@@ -1,0 +1,62 @@
+{
+    "Navbar":{
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "skills": "Habilidades",
+        "contact": "Contacto"
+    },
+    "PortfolioSection":{
+        "subtextdiv":{
+            "about1": "Hola, soy Alfonso Jiménez",
+            "about2": "Construyo aplicaciones web full-stack. Estoy abierto para trabajar actualmente.",
+            "stat1": "Clientes",
+            "stat2": "satisfechos",
+            "stat3": "Años de",
+            "stat4": "experiencia" 
+        },
+        "maintextdiv": {
+            "paragraph": "Yo soy un ",
+            "header1": "DESARROLLADOR",
+            "header2": "Full-Stack"
+        }
+    },
+    "AboutSection":{
+        "textdiv":{
+            "header": "Sobre mí",
+            "paragraph1": "Soy un desarrollador full-stack especializado, su solución ideal para crear sitios web full-stack, aplicaciones web dinámicas y de página única. Con pasión por la resolución de problemas y la innovación, me destaco en la creación de experiencias digitales perfectas adaptadas a las necesidades de su negocio.",
+            "paragraph2": "Me especializo en el desarrollo con React.js, TypeScript, Next.js y Node.js. Aprovecho el poder de las interfaces front-end y back-end para ofrecer soluciones sólidas y dinámicas que superan las expectativas. Ya sea que necesite un sitio web elegante o una aplicación web responsiva, tengo las habilidades para darle vida a su visión.",
+            "paragraph3": "Mi compromiso con un código limpio, mantenible y accesible garantiza una mejor usabilidad y escalabilidad, mientras que mi comprensión de los desafíos comerciales me permite desarrollar soluciones personalizadas que aborden sus necesidades específicas."
+        },
+        "VideoComponent":{
+            "loader": "Cargando video..."
+        },
+        "downloadCV": "Descargar CV"
+    },
+    "ProjectSection":{
+        "projectdiv":{
+            "header": "Mis Proyectos"
+        },
+        "projectcard":{
+            "code": "Código"
+        }
+    },
+    "SkillSection":{  
+        "header": "Mis Habilidades"
+    },
+    "Footer":{
+        "left":{
+            "paragraph": "Si están buscando un desarrollador web/front-end o necesitan ayuda con su proyecto, no duden en contactarme en"
+        },
+        "right":{
+            "header1": "Trabajemos",
+            "header2": "juntos",
+            "header3": "ahora"
+        }
+    },
+    "SocialSection":{
+        "socialcard":{
+            "linkedin": "Alfonso Jiménez"
+        }
+    }
+}

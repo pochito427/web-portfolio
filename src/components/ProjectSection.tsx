@@ -8,6 +8,7 @@ import { DiHtml5 } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { DiHtml5Multimedia } from "react-icons/di";
+import { DiAngularSimple } from "react-icons/di";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -83,6 +84,13 @@ const ProjectSection = () => {
                     <h1><a href="https://github.com/pochito427/react-challenge-02" target="_blank">React Router and Redux challenge</a></h1>
                     <DiReact /> <DiStylus />
                     <a href="https://github.com/pochito427/react-challenge-02" target="_blank">{t('projectcard.code')}</a>
+                </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                <div className={styles.projectcard}>
+                    <h1><a href="https://github.com/pochito427/heroes-api-integration-app" target="_blank">Heroes API integration app</a></h1>
+                    <DiAngularSimple />
+                    <a href="https://github.com/pochito427/heroes-api-integration-app" target="_blank">{t('projectcard.code')}</a>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>

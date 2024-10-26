@@ -9,6 +9,7 @@ import { DiCss3 } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { DiNodejs } from "react-icons/di";
 import { DiGit } from "react-icons/di";
+import { DiAngularSimple } from "react-icons/di";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -74,6 +75,12 @@ const SkillSection = () => {
                     <div className={styles.projectcard}>
                     <h1>React.js</h1>
                     <DiReact />
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className={styles.projectcard}>
+                    <h1>Angular</h1>
+                    <DiAngularSimple />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

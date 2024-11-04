@@ -9,6 +9,7 @@ import { DiCss3 } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { DiHtml5Multimedia } from "react-icons/di";
 import { DiAngularSimple } from "react-icons/di";
+import { DiRuby } from "react-icons/di";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -123,6 +124,13 @@ const ProjectSection = () => {
                     <DiHtml5 /> <DiCss3 />
                     <a href="https://pochito427.github.io/00-HTML-CSS-basics/boxmodel.html" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/pochito427.github.io/blob/master/00-HTML-CSS-basics/boxmodel.html" target="_blank">{t('projectcard.code')}</a>
+                </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                <div className={styles.projectcard}>
+                    <h1><a href="https://github.com/pochito427/ruby_koans" target="_blank">Ruby Koans</a></h1>
+                    <DiRuby />
+                    <a href="https://github.com/pochito427/ruby_koans" target="_blank">{t('projectcard.code')}</a>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>

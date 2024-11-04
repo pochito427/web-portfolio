@@ -19,7 +19,6 @@
   .right button,
   .right1 button {
     background-color: transparent;
-    color: black;
     font-weight: bold;
     font-size: 18px;
     border: none;
@@ -27,9 +26,17 @@
     /* textborder */
     -webkit-text-stroke: 0.5px rgb(212, 212, 212);
   }
+
+  .right button{
+    color: black;
+  }
+
+  .right1 button{
+    color: white;
+  }
   
   .right button:hover {
-    color: rgba(212, 212, 212);
+    color: rgba(0, 0, 255);
     cursor: pointer;
   }
 
@@ -112,5 +119,6 @@
       width: 100%;
       background-color: rgba(0, 0, 0, 0.764);
       height: 100vh;
+      color: white;
     }
   }

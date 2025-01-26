@@ -23,7 +23,7 @@ const SocialSection = () => {
             </div>
 
             <div className={styles.socialcard}
-                onClick={() => window.open('https://www.linkedin.com/in/alfonso-neil-jimenez-casallas-3208a120/', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/in/AlfonsoNeilJimenezCasallas/', '_blank')}
             >
                 <SocialIcon url="https://linkedin.com" style={{ height: 40, width: 40 }} />
                 <p>{t('socialcard.linkedin')}</p>

@@ -31,7 +31,8 @@
         "VideoComponent":{
             "loader": "Loading video..."
         },
-        "downloadCV": "Download CV"
+        "downloadCVmessage": "<download>Download CV</download>",
+        "downloadCVHref": "/CV.pdf" 
     },
     "ProjectSection":{
         "projectdiv":{

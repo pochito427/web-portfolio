@@ -18,7 +18,9 @@ const AboutSection = () => {
                     <VideoComponent />
                 </Suspense>
                 {/* Other content of the page */}
-                <a href="/CV.pdf" download="CV" className={styles.downloadcv}>{t('downloadCV')}</a>
+                {t.rich('downloadCVmessage', {
+                    download: (chunks) => <a href={t('downloadCVHref')} download="CV" className={styles.downloadcv}>{chunks}</a>
+                })}
             </section>
         </div>
     )

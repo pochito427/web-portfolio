@@ -10,7 +10,9 @@ import { DiPython } from "react-icons/di";
 import { DiNodejs } from "react-icons/di";
 import { DiGit } from "react-icons/di";
 import { DiAngularSimple } from "react-icons/di";
-import { DiRuby } from "react-icons/di";
+import { DiPhp } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -70,6 +72,7 @@ const SkillSection = () => {
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>TypeScript</h1>
+                    <SiTypescript />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -86,8 +89,8 @@ const SkillSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
-                    <h1>Ruby</h1>
-                    <DiRuby />
+                    <h1>PHP</h1>
+                    <DiPhp />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -99,6 +102,7 @@ const SkillSection = () => {
                 <SwiperSlide>
                     <div className={styles.projectcard}>
                     <h1>Redux</h1>
+                    <SiRedux />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

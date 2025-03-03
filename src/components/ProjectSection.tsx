@@ -9,7 +9,7 @@ import { DiCss3 } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { DiHtml5Multimedia } from "react-icons/di";
 import { DiAngularSimple } from "react-icons/di";
-import { DiRuby } from "react-icons/di";
+import { DiWordpress } from "react-icons/di";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -120,17 +120,17 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1><a href="https://pochito427.github.io/00-HTML-CSS-basics/boxmodel.html" target="_blank">CSS Box Model</a></h1>
+                    <h1><a href="https://pochito427.github.io/squid-game-grid/" target="_blank">Squid Game Grid</a></h1>
                     <DiHtml5 /> <DiCss3 />
-                    <a href="https://pochito427.github.io/00-HTML-CSS-basics/boxmodel.html" target="_blank">Demo</a>
-                    <a href="https://github.com/pochito427/pochito427.github.io/blob/master/00-HTML-CSS-basics/boxmodel.html" target="_blank">{t('projectcard.code')}</a>
+                    <a href="https://pochito427.github.io/squid-game-grid/" target="_blank">Demo</a>
+                    <a href="https://github.com/pochito427/squid-game-grid" target="_blank">{t('projectcard.code')}</a>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1><a href="https://github.com/pochito427/ruby_koans" target="_blank">Ruby Koans</a></h1>
-                    <DiRuby />
-                    <a href="https://github.com/pochito427/ruby_koans" target="_blank">{t('projectcard.code')}</a>
+                    <h1><a href="https://espaciocivicobarriosunidos.wordpress.com/" target="_blank">Wordpress Website</a></h1>
+                    <DiWordpress />
+                    <a href="https://espaciocivicobarriosunidos.wordpress.com/" target="_blank">Demo</a>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>

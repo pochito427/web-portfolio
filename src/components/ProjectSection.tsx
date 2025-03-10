@@ -12,6 +12,7 @@ import { DiRuby } from "react-icons/di";
 import { FaVuejs } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -53,7 +54,7 @@ const ProjectSection = () => {
                 <SwiperSlide>
                 <div className={styles.projectcard}>
                     <h1><a href="https://react-with-typescript-tan.vercel.app/" target="_blank">Random Fox Generator</a></h1>
-                    <DiReact />
+                    <DiReact /> <SiTypescript />
                     <a href="https://react-with-typescript-tan.vercel.app/" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/react-with-typescript" target="_blank">{t('projectcard.code')}</a>
                 </div>

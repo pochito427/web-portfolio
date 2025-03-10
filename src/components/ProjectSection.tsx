@@ -3,13 +3,15 @@ import React from "react";
 import { useTranslations } from 'next-intl';
 import { DiReact } from "react-icons/di";
 import { DiJavascript1 } from "react-icons/di";
-import { DiStylus } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { DiHtml5Multimedia } from "react-icons/di";
 import { DiAngularSimple } from "react-icons/di";
-import { DiWordpress } from "react-icons/di";
+import { DiRuby } from "react-icons/di";
+import { FaVuejs } from "react-icons/fa";
+import { SiNextdotjs } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -67,7 +69,7 @@ const ProjectSection = () => {
                 <SwiperSlide>
                 <div className={styles.projectcard}>
                     <h1><a href="https://nextjs-blog-seven-dusky-93.vercel.app/" target="_blank">Next.js Blog</a></h1>
-                    <DiReact />
+                    <DiReact /> <SiNextdotjs />
                     <a href="https://nextjs-blog-seven-dusky-93.vercel.app/" target="_blank">Demo</a>
                     <a href="https://github.com/pochito427/nextjs-blog" target="_blank">{t('projectcard.code')}</a>
                 </div>
@@ -83,7 +85,7 @@ const ProjectSection = () => {
                 <SwiperSlide>
                 <div className={styles.projectcard}>
                     <h1><a href="https://github.com/pochito427/react-challenge-02" target="_blank">React Router and Redux challenge</a></h1>
-                    <DiReact /> <DiStylus />
+                    <DiReact /> <SiRedux />
                     <a href="https://github.com/pochito427/react-challenge-02" target="_blank">{t('projectcard.code')}</a>
                 </div>
                 </SwiperSlide>
@@ -104,10 +106,10 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1><a href="https://pochito427.github.io/00-HTML-CSS-basics/layout_grid_system.html" target="_blank">Avengers Infinity War</a></h1>
-                    <DiHtml5 /> <DiCss3 />
-                    <a href="https://pochito427.github.io/00-HTML-CSS-basics/layout_grid_system.html" target="_blank">Demo</a>
-                    <a href="https://github.com/pochito427/pochito427.github.io/blob/master/00-HTML-CSS-basics/layout_grid_system.html" target="_blank">{t('projectcard.code')}</a>
+                    <h1><a href="https://codesandbox.io/s/github/pochito427/APIRestCountries" target="_blank">App to render names of countries</a></h1>
+                    <FaVuejs />
+                    <a href="https://codesandbox.io/s/github/pochito427/APIRestCountries" target="_blank">Demo</a>
+                    <a href="https://github.com/pochito427/APIRestCountries" target="_blank">{t('projectcard.code')}</a>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -128,9 +130,9 @@ const ProjectSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                 <div className={styles.projectcard}>
-                    <h1><a href="https://espaciocivicobarriosunidos.wordpress.com/" target="_blank">Wordpress Website</a></h1>
-                    <DiWordpress />
-                    <a href="https://espaciocivicobarriosunidos.wordpress.com/" target="_blank">Demo</a>
+                    <h1><a href="https://github.com/pochito427/ruby_koans" target="_blank">Ruby Koans</a></h1>
+                    <DiRuby />
+                    <a href="https://github.com/pochito427/ruby_koans" target="_blank">Code</a>
                 </div>
                 </SwiperSlide>
                 <SwiperSlide>

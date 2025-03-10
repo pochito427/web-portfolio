@@ -3,14 +3,14 @@ import React from "react";
 import { useTranslations } from 'next-intl';
 import { DiReact } from "react-icons/di";
 import { DiJavascript1 } from "react-icons/di";
-import { DiStylus } from "react-icons/di";
 import { DiHtml5 } from "react-icons/di";
 import { DiCss3 } from "react-icons/di";
 import { DiPython } from "react-icons/di";
 import { DiNodejs } from "react-icons/di";
 import { DiGit } from "react-icons/di";
 import { DiAngularSimple } from "react-icons/di";
-import { DiPhp } from "react-icons/di";
+import { DiRuby } from "react-icons/di";
+import { FaVuejs } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { SiRedux } from "react-icons/si";
 
@@ -89,8 +89,8 @@ const SkillSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
-                    <h1>PHP</h1>
-                    <DiPhp />
+                    <h1>Ruby</h1>
+                    <DiRuby />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -113,8 +113,8 @@ const SkillSection = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className={styles.projectcard}>
-                    <h1>Stylus</h1>
-                    <DiStylus />
+                    <h1>Vue.js</h1>
+                    <FaVuejs />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

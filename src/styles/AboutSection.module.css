@@ -17,13 +17,14 @@
     gap: 10px;
 }
 
-.about .textdiv h1 {
+.about .textdiv h2 {
     font-family: "Anta", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-size: 4rem;
     color: black;
+    margin: 0;
 }
 
 .about .textdiv p{
@@ -32,15 +33,22 @@
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
-    color: rgb(121, 121, 121);
+    color: #404040;
 }
 
 
+.about .mediaSection{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
 .about iframe{
     width:100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+    aspect-ratio: 16 / 9;
+    border: none;
     border-radius: 10px;
 }
 
@@ -90,9 +98,12 @@
         width: 90%;
     }
 
+    .about .mediaSection{
+        width: 90%;
+    }
+
     .about iframe{
         margin: 20px 0px;
-        width: 50%;
     }
 }
 
@@ -104,7 +115,7 @@
         text-align: center;
     }
 
-    .about .textdiv h1{
+    .about .textdiv h2{
         font-size: 2rem;
     }
 
@@ -112,8 +123,8 @@
         font-size: 0.9rem;
     }
 
-    .about iframe{
-        width: 80%;
+    .about .mediaSection{
+        width: 90%;
     }
     
 }

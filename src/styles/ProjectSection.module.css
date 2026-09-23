@@ -9,13 +9,14 @@
     padding: 10vh 0px;
 }
 
-.projectdiv h1{
+.projectdiv h2{
     font-family: "Anta", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
     font-size: 3rem;
     color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .projectdiv a{
@@ -41,7 +42,7 @@
 
 
 
-.projectcard h1{
+.projectcard h3{
     font-family: "Anta", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;

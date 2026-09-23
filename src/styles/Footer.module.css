@@ -14,7 +14,7 @@
 
 .left p {
     font-size: 25px;
-    color: grey;
+    color: #404040;
 }
 
 .left span {
@@ -29,7 +29,7 @@
     color: blue;
 }
 
-.right h1 {
+.tagline {
     font-size: 100px;
     font-family: 'Poppins', sans-serif;
     line-height: 100px;
@@ -59,7 +59,7 @@
 
 
 @media (max-width:450px) {
-    .right h1 {
+    .tagline {
         font-size: 60px;
         line-height: 60px;
     }

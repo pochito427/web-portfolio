@@ -1,6 +1,19 @@
-import getVideoSrc from "@/utils/getVideoSrc"
+import getVideoSrc from "@/utils/getVideoSrc";
 
-export default async function VideoComponent() {
-    const src = await getVideoSrc()
-    return <iframe src={src} frameBorder="0" allowFullScreen title="Video pitch about me" loading="lazy" />
+type VideoComponentProps = {
+    title?: string;
+}
+
+export default function VideoComponent({ title = "Video pitch" }: VideoComponentProps) {
+    const src = getVideoSrc();
+    return (
+        <iframe
+            src={src}
+            frameBorder={0}
+            allowFullScreen
+            title={title}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        />
+    );
 }

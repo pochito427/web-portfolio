@@ -29,11 +29,31 @@ import './ProjectSwiper.css';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 
+type Skill = {
+    name: string;
+    Icon: React.ElementType;
+}
+
+const skills: Skill[] = [
+    { name: 'HTML', Icon: DiHtml5 },
+    { name: 'CSS', Icon: DiCss3 },
+    { name: 'JavaScript', Icon: DiJavascript1 },
+    { name: 'TypeScript', Icon: SiTypescript },
+    { name: 'React.js', Icon: DiReact },
+    { name: 'Angular', Icon: DiAngularSimple },
+    { name: 'Ruby', Icon: DiRuby },
+    { name: 'Python', Icon: DiPython },
+    { name: 'Redux', Icon: SiRedux },
+    { name: 'Node.js', Icon: DiNodejs },
+    { name: 'Vue.js', Icon: FaVuejs },
+    { name: 'Git', Icon: DiGit },
+];
+
 const SkillSection = () => {
     const t = useTranslations('SkillSection');
     return (
-        <div className={styles.projectdiv}>
-            <h1>{t('header')}</h1>
+        <section className={styles.projectdiv} aria-label={t('header')}>
+            <h2>{t('header')}</h2>
             <div className='projectswipercontainer'>
                 <Swiper
                 effect={'coverflow'}
@@ -51,81 +71,17 @@ const SkillSection = () => {
                 modules={[EffectCoverflow, Pagination]}
                 className="mySwiper"
                 >
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>HTML</h1>
-                    <DiHtml5 />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>CSS</h1>
-                    <DiCss3 />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>JavaScript</h1>
-                    <DiJavascript1 />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>TypeScript</h1>
-                    <SiTypescript />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>React.js</h1>
-                    <DiReact />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>Angular</h1>
-                    <DiAngularSimple />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>Ruby</h1>
-                    <DiRuby />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>Python</h1>
-                    <DiPython />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>Redux</h1>
-                    <SiRedux />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>Node.js</h1>
-                    <DiNodejs />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>Vue.js</h1>
-                    <FaVuejs />
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className={styles.projectcard}>
-                    <h1>Git</h1>
-                    <DiGit />
-                    </div>
-                </SwiperSlide>
+                {skills.map((skill) => (
+                    <SwiperSlide key={skill.name}>
+                        <div className={styles.projectcard}>
+                            <h3>{skill.name}</h3>
+                            <skill.Icon />
+                        </div>
+                    </SwiperSlide>
+                ))}
                 </Swiper>
             </div>
-    </div>
+    </section>
     )
 }
 

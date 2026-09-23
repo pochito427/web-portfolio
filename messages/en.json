@@ -4,9 +4,16 @@
         "about": "About",
         "projects": "Projects",
         "skills": "Skills",
-        "contact": "Contact"
+        "contact": "Contact",
+        "skipToContent": "Skip to main content",
+        "openMenu": "Open menu",
+        "closeMenu": "Close menu",
+        "mainNavLabel": "Main navigation",
+        "mobileNavLabel": "Mobile navigation"
     },
     "PortfolioSection":{
+        "intro": "Introduction",
+        "altText": "Portrait of Alfonso Jimenez",
         "subtextdiv":{
             "about1": "Hi, I am Alfonso Jimenez",
             "about2": "I build full-stack web applications. I am open to work currently.",
@@ -31,6 +38,7 @@
         "VideoComponent":{
             "loader": "Loading video..."
         },
+        "videoTitle": "Video pitch about Alfonso Jimenez",
         "downloadCVmessage": "<download>Download CV</download>",
         "downloadCVHref": "/CV.pdf" 
     },
@@ -39,6 +47,7 @@
             "header": "My Projects"
         },
         "projectcard":{
+            "demo": "Demo",
             "code": "Code"
         }
     },
@@ -57,7 +66,17 @@
     },
     "SocialSection":{
         "socialcard":{
+            "github": "GitHub profile @pochito427",
+            "email": "Send email to djalfo18@gmail.com",
             "linkedin": "Alfonso Jimenez"
         }
+    },
+    "LocalSwitcher":{
+        "selectLanguage": "Select language"
+    },
+    "NotFound":{
+        "title": "Page Not Found",
+        "message": "Oops! It seems like you have stumbled upon a page that does not exist. Do not worry, our internationalization magic is still hard at work on other parts of the app. Feel free to navigate back to explore more!",
+        "returnHome": "Return Home"
     }
 }

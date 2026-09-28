@@ -17,16 +17,14 @@ export default function Home() {
   const contactRef = useRef<HTMLDivElement | null>(null);
   return (
     <>
-      <header>
-        <Navbar 
-          homeRef={homeRef}
-          aboutRef={aboutRef}
-          projectsRef={projectsRef}
-          skillsRef={skillsRef}
-          contactRef={contactRef}
-        />
-      </header>
-      <main id="main-content">
+      <Navbar
+        homeRef={homeRef}
+        aboutRef={aboutRef}
+        projectsRef={projectsRef}
+        skillsRef={skillsRef}
+        contactRef={contactRef}
+      />
+      <main id="main-content" tabIndex={-1}>
         <div id="home-section" ref={homeRef}>
           <PortfolioSection />
         </div>

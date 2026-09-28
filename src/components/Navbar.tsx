@@ -14,6 +14,8 @@ const sectionIds = {
 
 type SectionKey = keyof typeof sectionIds;
 
+const MOBILE_BREAKPOINT = 500;
+
 const Navbar = ({
     homeRef,
     aboutRef,
@@ -64,6 +66,27 @@ const Navbar = ({
         return () => window.removeEventListener('keydown', onKeyDown);
     }, [navEnabled]);
 
+    useEffect(() => {
+        if (typeof window.matchMedia !== 'function') return;
+        const mediaQuery = window.matchMedia(`(min-width: ${MOBILE_BREAKPOINT + 1}px)`);
+        const onChange = (event: MediaQueryListEvent | MediaQueryList) => {
+            if (event.matches) {
+                setNavEnabled(false);
+            }
+        };
+        onChange(mediaQuery);
+        mediaQuery.addEventListener('change', onChange);
+        return () => mediaQuery.removeEventListener('change', onChange);
+    }, []);
+
+    const handleSkipLinkClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        const main = document.getElementById('main-content');
+        if (!main) return;
+        event.preventDefault();
+        main.focus();
+        main.scrollIntoView({ behavior: 'smooth' });
+    }
+
     const NavLinks = () => (
         <>
             <a href="#home-section" onClick={(e) => handleNavClick(e, 'home')}>{t('home')}</a>
@@ -76,7 +99,7 @@ const Navbar = ({
 
     return (
         <header className={styles.navouter}>
-            <a href="#main-content" className={styles.skipLink}>{t('skipToContent')}</a>
+            <a href="#main-content" className={styles.skipLink} onClick={handleSkipLinkClick}>{t('skipToContent')}</a>
 
             <button
                 type="button"

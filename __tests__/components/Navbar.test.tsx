@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, fireEvent } from '../../tests/test-utils';
+import { render, screen, fireEvent, act } from '../../tests/test-utils';
 import Navbar from '@/components/Navbar';
 
 
@@ -95,5 +95,86 @@ describe('Navbar', () => {
     fireEvent.click(toggler);
     fireEvent.keyDown(window, { key: 'Escape' });
     expect(screen.getByLabelText('Open menu')).toHaveAttribute('aria-expanded', 'false');
+  });
+
+  it('ignores key presses other than Escape', () => {
+    setup();
+    const toggler = screen.getByLabelText('Open menu');
+    fireEvent.click(toggler);
+    fireEvent.keyDown(window, { key: 'Enter' });
+    expect(screen.getByLabelText('Close menu')).toHaveAttribute('aria-expanded', 'true');
+  });
+
+  it('moves focus to the main landmark when the skip link is used', () => {
+    const main = document.createElement('main');
+    main.id = 'main-content';
+    main.tabIndex = -1;
+    main.scrollIntoView = jest.fn();
+    document.body.appendChild(main);
+    setup();
+    fireEvent.click(screen.getByText('Skip to main content'));
+    expect(document.activeElement).toBe(main);
+    expect(main.scrollIntoView).toHaveBeenCalled();
+    main.remove();
+  });
+
+  it('leaves the skip link as a plain anchor when there is no main landmark', () => {
+    setup();
+    const skipLink = screen.getByText('Skip to main content');
+    const clicked = fireEvent.click(skipLink);
+    expect(clicked).toBe(true);
+  });
+
+  describe('with matchMedia support', () => {
+    let listeners: ((event: { matches: boolean }) => void)[];
+    let matches: boolean;
+
+    beforeEach(() => {
+      listeners = [];
+      matches = false;
+      Object.defineProperty(window, 'matchMedia', {
+        writable: true,
+        configurable: true,
+        value: jest.fn(() => ({
+          get matches() {
+            return matches;
+          },
+          addEventListener: (_: string, listener: (event: { matches: boolean }) => void) => {
+            listeners.push(listener);
+          },
+          removeEventListener: jest.fn(),
+        })),
+      });
+    });
+
+    afterEach(() => {
+      // @ts-expect-error resetting the jsdom default (matchMedia is not implemented)
+      delete window.matchMedia;
+    });
+
+    it('closes the mobile menu when the viewport widens past the mobile breakpoint', () => {
+      setup();
+      fireEvent.click(screen.getByLabelText('Open menu'));
+      expect(screen.getByLabelText('Close menu')).toHaveAttribute('aria-expanded', 'true');
+
+      matches = true;
+      act(() => {
+        listeners.forEach((listener) => listener({ matches: true }));
+      });
+
+      expect(screen.getByLabelText('Open menu')).toHaveAttribute('aria-expanded', 'false');
+      expect(document.getElementById('mobile-navigation')).not.toBeInTheDocument();
+    });
+
+    it('keeps the mobile menu open while the viewport stays narrow', () => {
+      setup();
+      fireEvent.click(screen.getByLabelText('Open menu'));
+
+      act(() => {
+        listeners.forEach((listener) => listener({ matches: false }));
+      });
+
+      expect(screen.getByLabelText('Close menu')).toHaveAttribute('aria-expanded', 'true');
+    });
   });
 });

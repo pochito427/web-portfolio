@@ -4,9 +4,16 @@
         "about": "Sobre mí",
         "projects": "Proyectos",
         "skills": "Habilidades",
-        "contact": "Contacto"
+        "contact": "Contacto",
+        "skipToContent": "Saltar al contenido principal",
+        "openMenu": "Abrir menú",
+        "closeMenu": "Cerrar menú",
+        "mainNavLabel": "Navegación principal",
+        "mobileNavLabel": "Navegación móvil"
     },
     "PortfolioSection":{
+        "intro": "Introducción",
+        "altText": "Retrato de Alfonso Jiménez",
         "subtextdiv":{
             "about1": "Hola, soy Alfonso Jiménez",
             "about2": "Construyo aplicaciones web full-stack. Estoy abierto para trabajar actualmente.",
@@ -31,6 +38,7 @@
         "VideoComponent":{
             "loader": "Cargando video..."
         },
+        "videoTitle": "Video pitch sobre Alfonso Jiménez",
         "downloadCVmessage": "<download>Descargar CV</download>",
         "downloadCVHref": "/CV-es.pdf"
     },
@@ -39,6 +47,7 @@
             "header": "Mis Proyectos"
         },
         "projectcard":{
+            "demo": "Demo",
             "code": "Código"
         }
     },
@@ -57,7 +66,17 @@
     },
     "SocialSection":{
         "socialcard":{
+            "github": "Perfil de GitHub @pochito427",
+            "email": "Enviar correo a djalfo18@gmail.com",
             "linkedin": "Alfonso Jiménez"
         }
+    },
+    "LocalSwitcher":{
+        "selectLanguage": "Seleccionar idioma"
+    },
+    "NotFound":{
+        "title": "Página no encontrada",
+        "message": "¡Ups! Parece que has llegado a una página que no existe. No te preocupes, nuestra magia de internacionalización sigue trabajando en otras partes de la aplicación. Siéntete libre de volver al inicio para explorar más.",
+        "returnHome": "Volver al inicio"
     }
 }

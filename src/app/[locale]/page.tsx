@@ -9,39 +9,39 @@ import ProjectSection from "@/components/ProjectSection";
 import SkillSection from "@/components/SkillSection";
 import SocialSection from "@/components/SocialSection";
 
-import styles from "./page.module.css";
-
 export default function Home() {
-  const homeRef = useRef<HTMLDivElement | null>(null); 
-  const aboutRef = useRef<HTMLDivElement | null>(null); 
-  const projectsRef = useRef<HTMLDivElement | null>(null); 
-  const skillsRef = useRef<HTMLDivElement | null>(null); 
-  const contactRef = useRef<HTMLDivElement | null>(null); 
+  const homeRef = useRef<HTMLDivElement | null>(null);
+  const aboutRef = useRef<HTMLDivElement | null>(null);
+  const projectsRef = useRef<HTMLDivElement | null>(null);
+  const skillsRef = useRef<HTMLDivElement | null>(null);
+  const contactRef = useRef<HTMLDivElement | null>(null);
   return (
-    <div>
-      <Navbar 
+    <>
+      <Navbar
         homeRef={homeRef}
         aboutRef={aboutRef}
         projectsRef={projectsRef}
         skillsRef={skillsRef}
         contactRef={contactRef}
       />
-      <div ref={homeRef} id="home-section">
-        <PortfolioSection />
-      </div>
-      <div ref={aboutRef} id="about-section">
-        <AboutSection />
-      </div>
-      <div ref={projectsRef} id="projects-section">
-        <ProjectSection />
-      </div>
-      <div ref={skillsRef} id="skills-section">
-        <SkillSection />
-      </div>
-      <div ref={contactRef} id="contact-section">
-        <Footer />
-      </div>
-      <SocialSection />
-    </div>
+      <main id="main-content" tabIndex={-1}>
+        <div id="home-section" ref={homeRef}>
+          <PortfolioSection />
+        </div>
+        <div id="about-section" ref={aboutRef}>
+          <AboutSection />
+        </div>
+        <div id="projects-section" ref={projectsRef}>
+          <ProjectSection />
+        </div>
+        <div id="skills-section" ref={skillsRef}>
+          <SkillSection />
+        </div>
+        <div id="contact-section" ref={contactRef}>
+          <Footer />
+          <SocialSection />
+        </div>
+      </main>
+    </>
   );
 }

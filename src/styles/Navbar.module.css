@@ -8,6 +8,23 @@
     top: 0;
     width: 100%;
   }
+
+  .skipLink {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 10001;
+    text-decoration: none;
+    border-radius: 0 0 4px 0;
+    transition: top 0.2s;
+  }
+
+  .skipLink:focus {
+    top: 0;
+  }
   
   .right,
   .right1 {
@@ -16,8 +33,8 @@
     justify-content: space-evenly;
   }
   
-  .right button,
-  .right1 button {
+  .right a,
+  .right1 a {
     background-color: transparent;
     font-weight: bold;
     font-size: 18px;
@@ -25,19 +42,24 @@
     padding: 3px 0px;
     /* textborder */
     -webkit-text-stroke: 0.5px rgb(212, 212, 212);
+    text-decoration: none;
+    display: inline-block;
   }
 
-  .right button{
+  .right a{
     color: black;
   }
 
-  .right1 button{
+  .right1 a{
     color: white;
   }
   
-  .right button:hover {
+  .right a:hover,
+  .right a:focus-visible {
     color: rgba(0, 0, 255);
     cursor: pointer;
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+    outline-offset: 4px;
   }
 
   .navtoggler {
@@ -52,10 +74,13 @@
     z-index: 1000;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
   
-  .navtoggler:focus {
+  .navtoggler:focus-visible {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    outline: 2px solid rgba(0, 0, 255, 0.5);
+    outline-offset: 4px;
   }
   
   .navtoggler span {
